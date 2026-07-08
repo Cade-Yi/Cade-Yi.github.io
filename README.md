@@ -23,7 +23,7 @@ Open `style.css` if you want to change the visual style. The main colors are def
 
 ## Deploy to GitHub Pages
 
-1. Create a GitHub repository named `cadedurant95.github.io`.
+1. Create a GitHub repository named `Cade-Yi.github.io`.
 2. Put these files in the root of that repository:
    - `index.html`
    - `style.css`
@@ -41,7 +41,7 @@ Open `style.css` if you want to change the visual style. The main colors are def
 After GitHub Pages finishes deploying, the website will be available at:
 
 ```text
-https://cadedurant95.github.io
+https://Cade-Yi.github.io
 ```
 
 ## Local Preview
