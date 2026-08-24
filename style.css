@@ -351,7 +351,9 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin: 0 0 1.15rem;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 1.15rem;
 }
 
 .project-gallery figure {
@@ -362,7 +364,7 @@ h3 {
 .project-gallery img {
   display: block;
   width: 100%;
-  height: 230px;
+  height: 170px;
   object-fit: contain;
   background: #f8fafb;
   border: 1px solid var(--line);
@@ -485,7 +487,7 @@ h3 {
   }
 
   .project-gallery img {
-    height: 250px;
+    height: 180px;
   }
 }
 
@@ -558,11 +560,12 @@ h3 {
   .project-gallery {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+    max-width: 320px;
   }
 
   .project-gallery img {
-    height: auto;
-    max-height: 320px;
+    height: min(220px, 68vw);
+    max-height: 220px;
   }
 
   .back-to-top {
