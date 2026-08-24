@@ -154,6 +154,15 @@ h3 {
   line-height: 1.48;
 }
 
+.focus-area {
+  max-width: 16rem;
+  margin: 0.75rem 0 0;
+  color: var(--accent);
+  font-size: 0.83rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
 .site-nav {
   display: grid;
   gap: 0.25rem;
@@ -304,6 +313,98 @@ h3 {
   color: var(--muted);
 }
 
+.featured-project {
+  padding: 1.45rem;
+  border-color: #cddde0;
+  box-shadow: 0 8px 22px rgba(22, 34, 44, 0.05);
+}
+
+.project-subtitle {
+  margin: 0.28rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.1rem 0 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  padding: 0.3rem 0.58rem;
+  color: #355158;
+  background: var(--tag-bg);
+  border: 1px solid #d6e5e2;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.15rem;
+}
+
+.project-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.project-gallery img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: #f8fafb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.project-gallery figcaption {
+  margin-top: 0.42rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.42rem 0.78rem;
+  color: #ffffff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: #ffffff;
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.project-attribution {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
 #contact p:last-child {
   padding: 1rem 1.1rem;
   background: var(--surface);
@@ -382,6 +483,10 @@ h3 {
     padding-bottom: 34px;
     margin-bottom: 34px;
   }
+
+  .project-gallery img {
+    height: 250px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -428,6 +533,10 @@ h3 {
     padding: 1rem;
   }
 
+  .featured-project {
+    padding: 1.05rem;
+  }
+
   .entry-header {
     display: block;
   }
@@ -444,6 +553,16 @@ h3 {
 
   .plain-list li {
     max-width: 100%;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .project-gallery img {
+    height: auto;
+    max-height: 320px;
   }
 
   .back-to-top {

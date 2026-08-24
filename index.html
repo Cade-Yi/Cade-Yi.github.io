@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yi Cade - Computer Science and Technology undergraduate personal academic homepage.">
-  <title>Yi Cade | Computer Science and Technology Undergraduate</title>
+  <meta name="description" content="Yi Cade - Computer Science undergraduate at Hunan University, interested in 3D vision, spatial intelligence, and embodied AI.">
+  <title>Yi Cade | Computer Science Undergraduate</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,8 @@
       <div class="profile">
         <div class="avatar" aria-hidden="true">Y</div>
         <h1>Yi Cade</h1>
-        <p class="role">Computer Science and Technology Undergraduate</p>
+        <p class="role">Computer Science Undergraduate at Hunan University</p>
+        <p class="focus-area">3D Vision · Spatial Intelligence · Embodied AI</p>
       </div>
 
       <nav class="site-nav" aria-label="Page sections">
@@ -47,23 +48,28 @@
         <h2>Bio</h2>
         <p>
           I am Yi Cade, an undergraduate student in Computer Science and Technology at Hunan University.
-          I am building a strong foundation in mathematics, data structures, programming, and computer systems.
         </p>
         <p>
-          My current goal is to prepare for research, graduate study, and practical software engineering
-          projects. I enjoy learning by implementing ideas, reading technical materials, and turning small
-          experiments into clear, usable projects.
+          My current interests lie in 3D vision, spatial intelligence, embodied AI, and multimodal learning. I am
+          particularly interested in how intelligent systems perceive, reconstruct, and reason about the 3D world
+          from visual observations.
+        </p>
+        <p>
+          I enjoy learning through implementation and controlled experiments. Recently, I have been exploring
+          modern 3D vision pipelines through multi-view reconstruction, synthetic data generation, camera geometry,
+          and quantitative evaluation, while continuing to strengthen my foundations in machine learning and
+          computer vision.
         </p>
       </section>
 
       <section id="research-interests" class="section">
         <h2>Research Interests</h2>
         <ul class="plain-list">
-          <li>Data structures and algorithms</li>
-          <li>C++ systems programming and Python development</li>
-          <li>Machine learning foundations and applications</li>
-          <li>AI systems and efficient model deployment</li>
-          <li>Database systems, indexing, and query processing</li>
+          <li>3D Vision &amp; Multi-view Geometry</li>
+          <li>Spatial Intelligence</li>
+          <li>Embodied AI</li>
+          <li>Multimodal Learning</li>
+          <li>Machine Learning</li>
         </ul>
       </section>
 
@@ -81,7 +87,64 @@
 
       <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="entry">
+        <article class="entry project-entry featured-project">
+          <div class="entry-header">
+            <div>
+              <h3>MiniWorld3D</h3>
+              <p class="project-subtitle">Multi-view 3D Reconstruction and Camera Pose Evaluation with VGGT</p>
+            </div>
+          </div>
+          <p>
+            A mini research project exploring multi-view 3D reconstruction and camera geometry with VGGT.
+          </p>
+          <p>
+            I built a controllable synthetic 3D scene in Blender and generated 24 multi-view RGB images with
+            ground-truth camera poses. I evaluated VGGT-1B under 3, 6, 12, and 24-view settings and aligned
+            predicted camera trajectories with Blender ground truth using Sim(3) alignment.
+          </p>
+          <p>
+            In the current synthetic experiment, the 24-view setting achieved an ATE RMSE of 0.0459,
+            approximately 36.7% lower than the 6-view setting.
+          </p>
+
+          <ul class="project-tags" aria-label="MiniWorld3D technologies">
+            <li>Python</li>
+            <li>PyTorch</li>
+            <li>Blender</li>
+            <li>VGGT</li>
+            <li>3D Vision</li>
+          </ul>
+
+          <div class="project-gallery">
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/Cade-Yi/MiniWorld3D/main/results/reconstruction/24_views.png"
+                alt="VGGT reconstruction from 24 synthetic views with estimated camera frustums"
+                loading="lazy"
+              >
+              <figcaption>24-view VGGT reconstruction</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/Cade-Yi/MiniWorld3D/main/results/camera_pose_eval/ate_vs_views.png"
+                alt="Line chart of camera trajectory ATE RMSE for 3, 6, 12, and 24 input views"
+                loading="lazy"
+              >
+              <figcaption>Camera trajectory evaluation</figcaption>
+            </figure>
+          </div>
+
+          <a class="project-link" href="https://github.com/Cade-Yi/MiniWorld3D" target="_blank" rel="noopener">
+            View Project →
+          </a>
+          <p class="project-attribution muted">
+            VGGT is used as an external pretrained model. This project focuses on synthetic data construction,
+            controlled experiments, camera-pose evaluation, and analysis rather than reproducing or modifying the
+            VGGT architecture.
+          </p>
+        </article>
+
+        <article class="entry project-entry">
           <div class="entry-header">
             <h3>Algorithm Practice Repository</h3>
             <span>C++ / Python</span>
@@ -90,37 +153,16 @@
             A growing collection of implementations and notes for classic data structures, graph algorithms,
             dynamic programming, and problem-solving patterns.
           </p>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Machine Learning Experiments</h3>
-            <span>Python</span>
-          </div>
-          <p>
-            Small learning projects for classification, regression, model evaluation, and feature analysis using
-            Python and common machine learning libraries.
-          </p>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <h3>Database Mini Projects</h3>
-            <span>SQL / Systems</span>
-          </div>
-          <p>
-            Practice projects focused on relational schema design, SQL queries, indexing ideas, and simple
-            data management workflows.
-          </p>
-        </div>
+        </article>
       </section>
 
       <section id="contact" class="section">
         <h2>Contact</h2>
         <p>
-          I am interested in research opportunities, graduate study preparation, and software engineering
-          projects. The best way to reach me is by email or through GitHub.
+          I am interested in undergraduate research opportunities and technical discussions related to 3D vision,
+          spatial intelligence, embodied AI, and related areas.
         </p>
+        <p>Feel free to contact me by email or through GitHub.</p>
         <p>
           Email: <a href="mailto:zy23@hnu.edu.cn">zy23@hnu.edu.cn</a><br>
           GitHub: <a href="https://github.com/Cade-Yi" target="_blank" rel="noopener">github.com/Cade-Yi</a>
