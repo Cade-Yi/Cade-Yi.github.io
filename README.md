@@ -4,7 +4,9 @@ Personal academic homepage of Yi Cade, an undergraduate student in Computer Scie
 
 ## Current Interests
 
-3D Vision, Spatial Intelligence, Embodied AI, and Multimodal Learning.
+3## Current Interests
+
+Multimodal Learning, Human-Centered AI, Affective & Cognitive Computing, Foundation Models, and AI Agents.
 
 ## Featured Project
 
